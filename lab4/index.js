@@ -42,7 +42,7 @@ App.get("/id/:id", (req, res)=>{
 App.get("/name/:name", (req,res)=>{
     let result = {"error": "Nothing found matches"};
     pokeArray.forEach((value) =>{
-        if(value.name.toLowerCase() == res.params.name){
+        if(value.name.toLowerCase() == req.params.name){
             let index = value.id - 1;
             result = pokeArray[index];
         }
