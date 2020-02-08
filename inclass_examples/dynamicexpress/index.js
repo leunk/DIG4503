@@ -25,17 +25,21 @@ App.get("/person/name/:name", (req,res) => {
             //look thru array
         }
     });
-    res.send("Hey! Hey, you! No! No!");
+    res.send("Invalid");
 
 });
 
-App.get("/person/color/:color", (req,res) => {
+App.get("/people/color/:color", (req,res) => {
     //res.send(req.params.color);
-    people.forEach((value) => {
-        if(value.color == req.params.color){
-            res.send(value);
-        }
-    });
+    // people.forEach((value) => {
+    //     if(value.color == req.params.color){
+    //         console.log(req.path);
+    //         res.send(value);
+    //   }
+    res.send(people.readColor(req));
+    
+    // console.log(req.path);
+    // res.send("Invalid");
 });
 
 App.listen(port, () => {
