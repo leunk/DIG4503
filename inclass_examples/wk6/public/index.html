@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            function clicker(){
+            //     console.log("Clickedd");
+            fetch("/api").then((Response) => {
+                return Response.json();
+            }).then((ProcessedResponse) =>{
+                console.log(ProcessedResponse);
+                //ProcessedResponse not build in. It is just 
+                //something we are calling 
+            });
+            }
+        </script>
+        <div onClick="clicker()">Click me</div>
+    </body>
+</html>
