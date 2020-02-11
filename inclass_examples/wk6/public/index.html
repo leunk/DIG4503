@@ -2,6 +2,11 @@
     <body>
         <script>
             function clicker(){
+
+            let element = document.querySelector("input");
+            
+
+
             //     console.log("Clickedd");
             fetch("/api").then((Response) => {
                 return Response.json();
@@ -12,6 +17,10 @@
             });
             }
         </script>
-        <div onClick="clicker()">Click me</div>
+        <form>
+            <input type ="text">
+            <div onClick="clicker()">Click me</div>
+        </form>
+        
     </body>
 </html>
