@@ -13,7 +13,7 @@ const chalk = require("Chalk");
 //pokemon stuff 
 const pokemons = require("json-pokemon");
 //npmjs json-pokemon possible usage 
-const getPokemons = require("json-pokemon"); //this will the array that is SEARCHING
+const getPokemons = require("json-pokemon"); //this will be the array that is SEARCHING
 //to search array for loop , or forEach 
 
 // const pokemonArray = pokemons;
