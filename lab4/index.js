@@ -32,7 +32,7 @@ App.get("/id/:id", (req, res)=>{
     getPokemons.forEach((value)=>{  
         if(value.id == req.params.id){ 
              let index = value.id - 1; //set result to what that is so that there is always a response 
-             result = pokemonArray[index];
+             result = getPokemons[index];
         }
     });
     //---------------some space---------------
