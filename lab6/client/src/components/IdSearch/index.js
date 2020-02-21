@@ -30,6 +30,8 @@ class IdSearch extends React.Component{
     }
 }
 export default IdSearch;
+
+//this code didn't work 
 // import React from "react";
 
 // class IdSearch extends React.Component{
@@ -54,6 +56,7 @@ export default IdSearch;
 //         render(){
 //             return(
 //             <div>
+//PROBLEM HERE: form needs to be set up <form> </form> if it is closed like so below it will break!
 //                 <form onSubmit = {this.readId}/>
 //                 <p>Enter Pokemon ID:</p>
 //                 <input id= "pokemonId" type="text" />
