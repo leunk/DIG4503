@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab5 - KL</title>
+    </head>
+    <body>
+        <script>
+            function idClick(event){
+                event.preventDefault();
+                let pokeId = document.querySelector("#pokemonId");
+
+                fetch("/id/" + pokeId.value).then((res) => {
+                    return res.json();
+                }).then((processed) =>{
+                    let pokeResponse = document.querySelector("#pokeResponse");
+
+                    if(processed.error){
+                        pokeResponse.innerHTML = processed.error;                        
+                    }
+                    else{
+                        pokeResponse.innerHTML = processed.name;
+                    }
+                });
+            }
+
+            function nameClick(event){
+                event.preventDefault();
+                let pokeName = document.querySelector("#pokemonName");
+
+                fetch("/name/" + pokeName.value).then((res) =>{
+                    return res.json();
+                }).then((processed) => {
+                    let pokeResponse = document.querySelector("#pokeResponse");
+                    if(processed.error){
+                        pokeResponse.innerHTML = processed.error;
+                    }
+                    else{
+                        pokeResponse.innerHTML = processed.name;
+                    }
+                });
+            }
+        </script>
+
+        <form onsubmit = "idClick(event)">
+            <p>Enter Pokemon ID:</p>
+            <input id= "pokemonId" type="text">
+            <button>Submit</button>
+        </form>
+
+        <form onsubmit = "nameClick(event)">
+            <p>Enter Pokemon Name:</p>
+            <input id= "pokemonName" type="text">
+            <button>Submit</button>
+        </form>
+        <br>
+
+        <div id="pokeResponse"></div>
+    </body>
+
+</html>
