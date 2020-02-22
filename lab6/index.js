@@ -2,13 +2,14 @@ const Express = require("express");
 const App = Express();
 const port = 80; 
 const chalk = require("Chalk");
+const cors = require("cors"); //cors ports
 
 // const pokemons = require("json-pokemon");
 const getPokemons = require("json-pokemon");
 
 //cors allows the dif ports to communicate with each other
 App.use(cors());
-const cors = require("cors"); 
+
 App.get("/", Express.static("client/build"));
 
 App.get("/id/:id", (req,res) => {
