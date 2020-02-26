@@ -1,0 +1,18 @@
+SQL - Structured Query Language
+Keys
+    - Database of tables 
+        - tables
+            - columns: are accessed through keys
+            - Rows
+
+Pipe Model / UNIX Pipe Model - Conceptual way to start a connection. All storages online uses this model
+    1)  Open Connection
+    2)  Use Connection
+    3)  Close Connection
+
+CRUD - Create, Read, Update, Delete
+Reading is faster -------- Uploading/Downloading is slower 
+
+MongoDB - Post REST 
+    - no SQL 
+    - understands JS Object Notation (JSON)
