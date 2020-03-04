@@ -1,0 +1,10 @@
+Regular Expressions
+    Patterns for searching text
+        /pattern/
+        example in mongodb:
+        {"title": /star/} or {"title": /Star/} ** with the capital S then it will look for the specific one
+            - looks within that exact string
+            - client that will shows results to user
+                - as I type, refine search
+
+Cursor
