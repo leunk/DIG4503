@@ -1,0 +1,88 @@
+Classes
+    - a "blueprint" for an object
+    In JS Classes can have two things:
+        - methods and attributes but JS calls them properties and functions
+        What special functions would be called if I wanted to make an object?
+        - constructor () 
+        example: new Object ()
+        when I say new Object it calls the constructor for that class. 
+
+Object Literals
+    - literally an object
+    object literals have {} classes are also defined with {}
+
+.this
+    - in class refers to class itself
+    - Arrow functions technical: no scope
+        "this: where defined not used"
+
+Object Oriented Programming (OOP)
+a) Is a (in JS extends)
+b) Has a (propreties)
+c) or none
+
+REACT
+    Component Model has two things:
+        - everything is a component
+        - components take care of themselves
+    Components are internally using fetch, took care of itself.
+        - fetch data, processed date, and returned it.
+
+    What functions in React usually returns?
+    render()
+
+JSX
+    what does it stands for? JavaScript XML
+
+    It has 3 rules: (these are XML rules)
+        1) one root element ("wrapping")
+        2) expressions only / no statements
+        3) everything must CLOSE!
+
+Express
+    - route
+        - Method: CRUD -> HTTP Method (Create, React, U, Delete)
+          what is the HTTP that matches to CRUD?
+            C: POST
+            R: GET
+            U: PATCH
+            D: DELETE 
+
+        - Path: Request parameter /____/___/:value
+          what property requests parameters?
+          req.params
+
+        - Response: res.___()
+                    res.___() 
+                    
+                    so far we have only used two res, what are those two?
+                        - res.send() --> there always has to be a response!
+                        - res.json() 
+
+Node + Command-Line tools
+    Commands
+        cd - change directory
+        mkdir - make directory
+        node - "runs a JS file"
+        npm - Node Package Manager
+        npx - Node Package Runner
+        npm init - initializes a node project, it also creates a file package.json
+                keeps tracks of dependencies and packages
+            package-lock.json: protects you
+        npx create-react-app: creates a react app
+        npm install ___ : looks for a package to install, if doing npm install by itself it looks for
+                        the packages that you don't have and installs them for you
+                    But how does it know what to look for to install?
+                    it will look inside your package-lock.json and folders. If you are calling it and don't have it installed
+                    it will get it for you
+        
+
+the arrow function has its own this?
+No
+
+A route is composed of a path and response?
+False - is composed of THREE things. Path, Response and Method
+
+
+
+App.use - for middleware
