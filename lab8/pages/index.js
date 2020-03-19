@@ -12,19 +12,9 @@ class Home extends React.Component{
         resultElement.innerHTML = "Could not find!";
       }
       else{
-        resultElement.innerHTML = "Its ID is" + processed.id;
+        resultElement.innerHTML = "Its ID is " + processed.id;
       }
     });
-  }
-
-  render(){
-    return(
-      <div>
-        <input type="text" id="pokemonName" />
-        <button onClick={() => { this.getName() } }>SUBMIT</button>
-        <div id="results"></div>
-      </div>
-    );
   }
 
   getId(){
@@ -39,7 +29,7 @@ class Home extends React.Component{
         resultElement.innerHTML = "Could not find!";
       }
       else{
-        resultElement.innerHTML = "Its ID is" + processed.id;
+        resultElement.innerHTML = "Its Name is " + processed.name;
       }
     });
   }
@@ -47,8 +37,16 @@ class Home extends React.Component{
   render(){
     return(
       <div>
-        <input type="text" id="pokemonId" />
-        <button onClick = {() => {this.getId()}}>SUBMIT</button>
+        <h4>Search by Name</h4>
+        <input type="text" id="pokemonName" />
+        <button onClick= {()=>{this.getName()}}>Submit</button>
+        <br/>
+        <div>
+          <h4>Search by ID</h4>
+          <input type="text" id="pokemonId" />
+          <button onClick = {() => {this.getId()}}>Submit</button>
+        </div>
+        <br/>
         <div id="results"></div>
       </div>
     )
