@@ -1,23 +1,7 @@
-//trying example from repl
-
-
-// const Home = () =>{
-//   return(
-//     <div>
-//       <NameSearch/>
-//       <IdSearch/>
-//       <h2>Reporting</h2>
-//       <div id="reportingAreaName"></div>
-//       <div id="reportingAreaId"></div>
-//     </div>
-//   );
-// }
-
-// export default Home; 
-
+ 
 class Home extends React.Component{
   getName(){
-    let name = document.querySelector('#nameIput');
+    let name = document.querySelector('#pokemonName');
     fetch("/api/pokemon/name/" + name.value)
     .then((res) => {return res.json();})
     .then((processed) => {
@@ -36,7 +20,7 @@ class Home extends React.Component{
   render(){
     return(
       <div>
-        <input type="text" id="nameInput" />
+        <input type="text" id="pokemonName" />
         <button onClick={() => { this.getName() } }>SUBMIT</button>
         <div id="results"></div>
       </div>
@@ -44,7 +28,7 @@ class Home extends React.Component{
   }
 
   getId(){
-    let id = document.querySelector("#idInput");
+    let id = document.querySelector("#pokemonId");
 
     fetch("/api/pokemon/id" + id.value)
     .then((res) => {return res.json();})
@@ -63,7 +47,7 @@ class Home extends React.Component{
   render(){
     return(
       <div>
-        <input type="text" id="idInput" />
+        <input type="text" id="pokemonId" />
         <button onClick = {() => {this.getId()}}>SUBMIT</button>
         <div id="results"></div>
       </div>
