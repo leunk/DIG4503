@@ -20,7 +20,7 @@ class Home extends React.Component{
   getId(){
     let id = document.querySelector("#pokemonId");
 
-    fetch("/api/pokemon/id" + id.value)
+    fetch("/api/pokemon/id/" + id.value)
     .then((res) => {return res.json();})
     .then((processed) => {
       let resultElement = document.querySelector("#results");
