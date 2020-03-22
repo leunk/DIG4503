@@ -12,7 +12,7 @@ class Home extends React.Component{
         resultElement.innerHTML = "Could not find!";
       }
       else{
-        resultElement.innerHTML = "Its ID is " + processed.id;
+        resultElement.innerHTML = "Its ID is " + processed.id + " and the name you entered is " + processed.name;
       }
     });
   }
@@ -29,7 +29,7 @@ class Home extends React.Component{
         resultElement.innerHTML = "Could not find!";
       }
       else{
-        resultElement.innerHTML = "Its Name is " + processed.name;
+        resultElement.innerHTML = "Its Name is " + processed.name + " and the ID you entered is " + processed.id;
       }
     });
   }
