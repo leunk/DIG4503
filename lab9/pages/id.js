@@ -24,6 +24,7 @@ const id = () => {
             </Link>
 
             <br />
+            
 
             <IdSearch />
             <div className = {styles.reportarea} id = "reportingArea">
