@@ -5,7 +5,7 @@ class IdSearch extends React.Component{
         event.preventDefault();
         let pokeId = document.querySelector("#pokemonId");
 
-        fetch("http://localhost:80/id/" + pokeId.value).then((res)=>{
+        fetch("http://localhost:3000/api/pokemon/id/" + pokeId.value).then((res)=>{
             return res.json();
         }).then((processed) =>{
             let pokeResponse = document.querySelector("#reportingArea");

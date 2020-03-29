@@ -1,21 +1,68 @@
-h2{
+.body{
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+}
+.heading{
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
     color: #3B4CCA;
     text-shadow: 1px 0 2px #3d3d3d;
     text-transform: uppercase;
     padding: 20px;
+
+    -webkit-animation: colorchange 20s infinite alternate;    
+} 
+@-webkit-keyframes colorchange{
+    0%{
+        color: #3B4CCA;
+    }
+    10%{
+        color: #DF807E;
+    }
+    20%{
+        color: #CC0000;
+    }
+    30%{
+        color: #B3A125;
+    }
+    40%{
+        color: #CC6310;
+    }
+    50%{
+        color: #55A3AB;
+    }
+    60%{
+        color: #3B4CCA;
+    }
+    70%{
+        color: #A2D7D5;
+    }
+    80%{
+        color: #008393;
+    }
+    90%{
+        color: #E3ABB5;
+    }
+    100%{
+        color: #F4D9E2;
+    }
+
 }
+
 .link{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #B3A125;
-    padding: 5px;
     text-decoration: none;
 }
 .reportarea{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #08042c;
+    color: #008393;
+    font-size: 20px;
     padding: 5px;
-    border: 1px dashed #3B4CCA;
+    /* border: 1px dashed #3B4CCA; */
     max-width: 60%;
+    padding: 10px;
+    margin-top: 20px;
 }
 

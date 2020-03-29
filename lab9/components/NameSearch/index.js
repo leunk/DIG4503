@@ -6,7 +6,7 @@ class NameSearch extends React.Component {
         event.preventDefault();
             let pokeName = document.querySelector("#pokemonName");
 
-            fetch("http://localhost:80/name/" + pokeName.value).then((res) =>{
+            fetch("http://localhost:3000/api/pokemon/name/" + pokeName.value).then((res) =>{
                 return res.json();
             }).then((processed) => {
                 let pokeResponse = document.querySelector("#reportingArea");

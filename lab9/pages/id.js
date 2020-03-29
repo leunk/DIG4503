@@ -1,13 +1,14 @@
 //from module example
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from '../components/StylePages/index.css';
+//changed name of the css file to see if it werks
+import styles from '../components/StylePages/style.module.css';
 import IdSearch from '../components/IdSearch';
 
 const id = () => {
     return(
-        <div>
-            <h2>Poke Search</h2>
+        <div className = {styles.body}>
+            <h2 className = {styles.heading}>Poke Search</h2>
             <Head>
                 <title>ID Search</title>
             </Head>
