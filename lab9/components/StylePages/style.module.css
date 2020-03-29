@@ -1,0 +1,21 @@
+h2{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: #3B4CCA;
+    text-shadow: 1px 0 2px #3d3d3d;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #B3A125;
+    padding: 5px;
+    text-decoration: none;
+}
+.reportarea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #08042c;
+    padding: 5px;
+    border: 1px dashed #3B4CCA;
+    max-width: 60%;
+}
+
